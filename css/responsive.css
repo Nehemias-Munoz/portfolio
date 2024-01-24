@@ -1,0 +1,28 @@
+/* header */
+@media (max-width: 480px) {
+  /* header */
+  header ul li {
+    display: inline-block;
+    padding: 0.2rem 0.1rem;
+    border-radius: 5px;
+  }
+  /* home */
+  #home {
+    flex-direction: column-reverse;
+  }
+  /* about */
+  #about {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #profile,
+  #education {
+    flex: none;
+  }
+  /* skills */
+  #skills {
+    flex-direction: column;
+  }
+}
