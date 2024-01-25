@@ -157,3 +157,29 @@ main {
     min-width: 60px;
   }
 }
+
+/* contact section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 90%;
+  min-width: 300px;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  input,
+  textarea,
+  button {
+    padding: 0.8rem;
+  }
+  button {
+    width: 40%;
+    align-self: center;
+  }
+}

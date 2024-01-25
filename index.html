@@ -9,6 +9,10 @@
     <title>Nehemias Muñoz</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/4793ceea27.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -118,7 +122,49 @@
         </article>
       </section>
       <section id="projects"></section>
-      <section id="contact"></section>
+      <section id="contact">
+        <h3>Contacto</h3>
+        <form
+          action="https://formsubmit.co/15e6abd3fbc1c663aa6e59c82af4c7a3"
+          method="post"
+        >
+          <label for="name">Nombre</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Michael Scott"
+            maxlength="40"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Usuario@email.com"
+            maxlength="40"
+            required
+          />
+          <label for="subject">Asunto</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Cotización"
+          />
+          <label for="message">Mensaje</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="20"
+            rows="8"
+            placeholder="Ingresa tu mensaje"
+          ></textarea>
+          <button type="submit">
+            Enviar Mensaje <i class="fa-solid fa-envelope"></i>
+          </button>
+        </form>
+      </section>
     </main>
     <footer></footer>
   </body>
