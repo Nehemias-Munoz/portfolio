@@ -14,10 +14,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif", serif;
 }
 header {
   padding: 1rem 0;
   position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -79,9 +84,8 @@ main {
   display: flex;
   justify-content: center;
   img {
-    width: 100%;
     aspect-ratio: 4/3;
-    min-width: 400px;
+    width: 100%;
     max-width: 400px;
     padding: 5px;
     border: 2px solid var(--ronchi-300);
@@ -136,11 +140,13 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
 }
 .stack {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .card {
@@ -149,12 +155,13 @@ main {
   justify-content: center;
   align-items: center;
   height: 70px;
-  outline: 1px solid red;
   padding: 1rem;
-  img {
+  border: 0.5px solid var(--ronchi-400);
+  background-color: var(--ronchi-200);
+  i {
     width: 100%;
-    max-width: 60px;
-    min-width: 60px;
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
