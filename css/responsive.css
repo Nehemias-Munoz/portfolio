@@ -8,6 +8,7 @@
   }
   /* home */
   #home {
+    height: fit-content;
     flex-direction: column-reverse;
     img {
       width: 90%;

@@ -40,11 +40,7 @@ header ul li {
   padding: 1rem 2rem;
   border-radius: 5px;
 }
-nav ul li:hover {
-  text-decoration-color: var(--ronchi-400);
-  text-decoration-line: underline;
-  text-decoration-thickness: 0.3rem;
-}
+
 main {
   padding: 2rem;
   section {
@@ -95,12 +91,18 @@ main {
 
 /* About Section */
 #about {
-  height: 100dvh;
-  display: flex;
-  flex-direction: row;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 1fr;
   gap: 1rem;
   align-items: center;
   border-bottom: 1px solid var(--ronchi-500);
+
+  h2 {
+    grid-column: span 2;
+    text-align: center;
+  }
 }
 #profile {
   flex: 1.5;
@@ -135,18 +137,27 @@ main {
 /* skills section */
 #skills {
   gap: 1rem;
-  height: 50dvh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 1fr;
   align-items: center;
+  justify-content: center;
   font-weight: 700;
+  text-align: start;
+  h2 {
+    grid-column: span 2;
+    text-align: center;
+  }
+  align-items: start;
 }
+
 .stack {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.4rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  justify-content: center;
+  gap: 0.7rem;
 }
 
 .card {
@@ -157,6 +168,7 @@ main {
   height: 70px;
   padding: 1rem;
   border: 0.5px solid var(--ronchi-400);
+  border-radius: 5px;
   background-color: var(--ronchi-200);
   i {
     width: 100%;
@@ -186,7 +198,10 @@ form {
     padding: 0.8rem;
   }
   button {
+    border-radius: 5px;
     width: 40%;
     align-self: center;
+    border: none;
+    background-color: var(--ronchi-200);
   }
 }

@@ -1,0 +1,21 @@
+:root {
+  --ronchi-50: #fdf9ed;
+  --ronchi-100: #f8eecd;
+  --ronchi-200: #f1db96;
+  --ronchi-300: #e9c25c;
+  --ronchi-400: #e4ae3b;
+  --ronchi-500: #dc9024;
+  --ronchi-600: #c36e1c;
+  --ronchi-700: #a24f1b;
+  --ronchi-800: #843f1c;
+  --ronchi-900: #6d341a;
+  --ronchi-950: #3e1a0a;
+}
+nav ul li:hover {
+  text-decoration-color: var(--ronchi-400);
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.3rem;
+}
+button:hover {
+  background-color: var(--ronchi-300);
+}
