@@ -19,3 +19,7 @@ nav ul li:hover {
 button:hover {
   background-color: var(--ronchi-300);
 }
+/* home section */
+#me > a:hover {
+  background-color: var(--ronchi-400);
+}

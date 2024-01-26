@@ -1,19 +1,23 @@
 /* header */
 @media (max-width: 850px) {
   /* header */
+  nav {
+    overflow: scroll;
+    white-space: nowrap;
+  }
   header ul li {
     display: inline-block;
-    padding: 0.2rem 0.1rem;
+    padding: 0.2rem;
     border-radius: 5px;
   }
+
   /* home */
   #home {
     height: fit-content;
-    flex-direction: column-reverse;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     img {
-      width: 90%;
-      min-width: 400px;
-      max-width: 500px;
+      object-fit: cover;
     }
   }
   /* about */
