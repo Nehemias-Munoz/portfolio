@@ -30,6 +30,7 @@ header {
   background-color: var(--ronchi-200);
   box-shadow: 10px 5px 5px var(--ronchi-100);
 }
+
 ul {
   list-style: none;
   a {
@@ -42,11 +43,20 @@ header ul li {
   padding: 1rem 2rem;
   border-radius: 5px;
 }
+nav ul li a {
+  color: var(--ronchi-900);
+}
 
 main {
   padding: 2rem;
   section {
     padding: 1.3rem 1rem;
+  }
+  h2 {
+    color: var(--ronchi-900);
+  }
+  h3 {
+    color: var(--ronchi-900);
   }
 }
 
@@ -73,6 +83,9 @@ main {
 }
 #me {
   text-align: center;
+  a {
+    color: var(--ronchi-600);
+  }
   p {
     font-size: 2rem;
   }
@@ -117,6 +130,10 @@ main {
 }
 #profile {
   flex: 1.5;
+}
+#certificates a {
+  text-decoration: underline;
+  color: var(--ronchi-700);
 }
 #education {
   flex: 1;
@@ -204,10 +221,15 @@ form {
   flex-direction: column;
   gap: 0.5rem;
 
+  label {
+    color: var(--ronchi-900);
+  }
   input,
   textarea,
   button {
     padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid var(--ronchi-950);
   }
   button {
     border-radius: 5px;
